@@ -122,19 +122,17 @@ export default {
     // 0.全部 1.女装 2.男装 3.内衣 4.母婴 5.化妆品 6.居家 7.鞋包配饰 8.美食 9.文体车品 10.数码家电
     if (Export.getUrlParam().category) {
       if (Export.getUrlParam().category == 1) {
-        this.searchVal = '女装';
+        this.searchVal = '犬';
       } else if (Export.getUrlParam().category == 2) {
-        this.searchVal = '男装';
+        this.searchVal = '猫';
       } else if (Export.getUrlParam().category == 3) {
-        this.searchVal = '内衣';
+        this.searchVal = '鸟';
       } else if (Export.getUrlParam().category == 4) {
-        this.searchVal = '母婴';
+        this.searchVal = '鱼';
       } else if (Export.getUrlParam().category == 5) {
-        this.searchVal = '美妆';
+        this.searchVal = '宠粮';
       } else if (Export.getUrlParam().category == 6) {
-        this.searchVal = '居家';
-      } else if (Export.getUrlParam().category == 7) {
-        this.searchVal = '鞋包';
+        this.searchVal = '服务';
       } else {
         this.searchVal = '';
       }

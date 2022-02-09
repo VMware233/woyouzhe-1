@@ -178,6 +178,7 @@ export default {
         me.isOut = false;
       }
 
+
       getShopList(
         me.pageNo, 
         me.pageNum, 
@@ -195,7 +196,7 @@ export default {
 
               if (res.data) {
                 me.isShow = true;
-                me.myData = res.data;
+                // me.myData = res.data;
 
                 if (res.data.length >= 10) {  
                   me.downFlag = false;
@@ -219,7 +220,8 @@ export default {
 
               if (res.data) {
                 setTimeout(() => {
-                  me.myData.push(...res.data);
+                  // me.myData.push(...res.data);
+                  
                   me.downFlag = false;
                   me.haveMore = true;
 
@@ -237,6 +239,38 @@ export default {
               me.times = 0;
             }
           }
+          me.myData.push({
+            GoodsName:"狗狗",
+            ImgUrl:"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F014caa554541210000019ae9f0567c.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1646977633&t=b89ad786b02cd1c780afa994c38b3a22",
+            LastPrice: 99,
+            GoodsPrice: 188,
+            AllDayCount: 10,
+            ActMoney: 20
+            },
+            {
+            GoodsName:"猫猫",
+            ImgUrl:"https://img1.baidu.com/it/u=1159982953,1956383570&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500",
+            LastPrice: 188,
+            GoodsPrice: 288,
+            AllDayCount: 10,
+            ActMoney: 30
+            },
+            {
+            GoodsName:"🐠🐠",
+            ImgUrl:"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fcffdcb76f4f7d4c08847864c5615be56108b36f03e0c8-uuUWpQ_fw658&refer=http%3A%2F%2Fhbimg.b0.upaiyun.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1646978000&t=1dc0090b008357361e0176861d2b9065",
+            LastPrice: 19,
+            GoodsPrice: 39,
+            AllDayCount: 55,
+            ActMoney: 4
+            },
+            {
+            GoodsName:"鸟鸟",
+            ImgUrl:"https://img0.baidu.com/it/u=878445410,2434516592&fm=253&fmt=auto&app=138&f=PNG?w=600&h=400",
+            LastPrice: 79,
+            GoodsPrice: 129,
+            AllDayCount: 89,
+            ActMoney: 9
+            },)
       })
       .catch(err => {
         me.isLoading = false;

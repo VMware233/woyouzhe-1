@@ -24,58 +24,44 @@ export default {
         {
             id: "1",
             category: 2,
-            name: "男装",
+            name: "猫",
             sort: "100",
             imgUrl: require('../assets/img/category/nanzhuang.png')
         },
         {
             id: "2",
             category: 1,
-            name: "女装",
+            name: "犬",
             sort: "100",
             imgUrl: require('../assets/img/category/nvzhuang.png')
         },
         {
             id: "3",
-            category: 6,
-            name: "居家",
+            category: 3,
+            name: "鸟",
             sort: "100",
             imgUrl: require('../assets/img/category/jujia.png')
         },
         {
             id: "4",
             category: 4,
-            name: "母婴",
+            name: "鱼",
             sort: "100",
             imgUrl: require('../assets/img/category/muying.png')
         },
         {
             id: "5",
-            category: 3,
-            name: "内衣",
+            category: 5,
+            name: "宠粮",
             sort: "100",
             imgUrl: require('../assets/img/category/meizhuang.png')
         },
         {
             id: "6",
-            category: 7,
-            name: "鞋包",
+            category: 6,
+            name: "服务",
             sort: "100",
             imgUrl: require('../assets/img/category/xiebao.png')
-        },
-        {
-            id: "7",
-            category: 5,
-            name: "美妆",
-            sort: "100",
-            imgUrl: require('../assets/img/category/meizhuang.png')
-        },
-        {
-            id: "8",
-            category: 0,
-            name: "更多",
-            sort: "100",
-            imgUrl: require('../assets/img/category/more.png')
         }
       ]
     }
